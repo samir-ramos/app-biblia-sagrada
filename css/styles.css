@@ -37,40 +37,51 @@
   background-color: var(--bgc-principal);
   color: var(--txt-principal);
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .container {
   display: grid;
+  grid-template-rows: 1fr;
+}
+
+#pagina-inicial {
+  display: grid;
   grid-template-rows: auto 1fr;
-  height: 100%;
 }
 
 #pagina-inicial header {
   display: grid;
-  grid-template-rows: 10dvh;
+  grid-template-rows: 7dvh;
   place-items: center;
   background-color: var(--bgc-secindario);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 #pagina-inicial main {
-  height: 100%;
   padding: 5px 10px;
   text-align: justify;
-  border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 #pagina-inicial main #boas-vindas h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 400;
   margin: 10px 0;
 }
 
 #pagina-inicial main aside {
   background-color: var(--bgc-especial);
   color: var(--txt-destaque);
+  place-self: center;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 footer {
@@ -105,7 +116,7 @@ footer .navbar a {
 }
 
 footer p {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   background-color: var(--bgc-secindario);
   padding: 5px;
 }
