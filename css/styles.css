@@ -2,19 +2,23 @@
 @import url(pagina-inicial.css);
 
 :root {
-  /* Cores para background */
-  --bgc-principal: #121212;
-  --bgc-secindario: #1e1e1e;
-  --bgc-destaque: #23232e;
-  --bgc-alternativo: #252525;
-  --bgc-especial: #2c2c34;
+  /*Principals colors*/
+  --light-sand: #faf7f0;
+  --dark-sand: #d8d2c2;
+  --brown: #b17457;
+  --dark-gray: #4a4947;
 
-  /*Cores para texto */
-  --txt-principal: #f8f8f2;
-  --txt-secundario: #b0bec5;
-  --txt-destaque: #80cbc4;
-  --txt-ativo: #bb86fc;
-  --txt-alerta: #ff8a80;
+  /*Secondary colors*/
+  --dark-chocolate: #603f26;
+  --light-chocolate: #6c4e31;
+  --skin-ton: #ffdbb5;
+  --light-skin-ton: #fffac5;
+
+  /*Terceary colors*/
+  --blue-25: #dde6ed;
+  --blue-50: #9db2bf;
+  --blue-75: #526d82;
+  --blue-100: #27374d;
 }
 
 * {
@@ -28,16 +32,24 @@
   font-weight: inherit;
 }
 
+.negrito {
+  font-weight: bold;
+}
+
+.italico {
+  font-style: italic;
+}
+
 .wrapper {
   width: 100%;
   min-width: 390px;
   height: 100dvh;
   display: grid;
   grid-template-rows: 1fr auto;
-  background-color: var(--bgc-principal);
-  color: var(--txt-principal);
+  background-color: var(--skin-ton);
+  color: var(--dark-chocolate);
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .container {
@@ -54,9 +66,10 @@
   display: grid;
   grid-template-rows: 7dvh;
   place-items: center;
-  background-color: var(--bgc-secindario);
+  background-color: var(--dark-chocolate);
+  color: var(--light-skin-ton);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 #pagina-inicial main {
@@ -66,9 +79,21 @@
   grid-template-rows: auto 1fr;
 }
 
+#pagina-inicial main #boas-vindas {
+  font-size: 0.7rem;
+}
+
 #pagina-inicial main #boas-vindas h2 {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+#pagina-inicial main #boas-vindas ul {
+  margin: 10px 0;
+}
+
+#pagina-inicial main #boas-vindas #versiculo-de-abertura {
   margin: 10px 0;
 }
 
@@ -107,7 +132,8 @@ footer .navbar a {
   align-items: center;
   justify-content: center;
   padding: 5px 0;
-  background-color: var(--bgc-destaque);
+  background-color: var(--dark-chocolate);
+  color: var(--light-skin-ton);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -118,5 +144,5 @@ footer .navbar a {
 footer p {
   font-size: 0.6rem;
   background-color: var(--bgc-secindario);
-  padding: 5px;
+  padding: 2px;
 }
