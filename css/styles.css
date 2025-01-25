@@ -60,9 +60,10 @@
 #pagina-inicial {
   display: grid;
   grid-template-rows: auto 1fr;
+  display: none;
 }
 
-#pagina-inicial header {
+header {
   display: grid;
   grid-template-rows: 7dvh;
   place-items: center;
@@ -72,11 +73,12 @@
   font-weight: 700;
 }
 
-#pagina-inicial main {
+main {
   padding: 5px 10px;
   text-align: justify;
   display: grid;
   grid-template-rows: auto 1fr;
+  overflow-y: auto;
 }
 
 #pagina-inicial main #boas-vindas {
@@ -107,6 +109,10 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.wrapper #livros {
+  /* display: none; */
 }
 
 footer {
