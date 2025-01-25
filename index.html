@@ -64,7 +64,23 @@
           <header>
             <h1>Livros</h1>
           </header>
-          <main></main>
+          <main>
+            <ul id="lista-livros">
+              <li>
+                <button class="livro" data-livro="Genesis">Gênesis</button>
+                <div class="capitulos" id="Genesis-capitulos"></div>
+              </li>
+              <li>
+                <button class="livro" data-livro="Exodus">Êxodo</button>
+                <div class="capitulos" id="Exodus-capitulos"></div>
+              </li>
+              <li>
+                <button class="livro" data-livro="Leviticus">Levítico</button>
+                <div class="capitulos" id="Leviticus-capitulos"></div>
+              </li>
+              <!-- Adicione mais livros conforme necessário -->
+            </ul>
+          </main>
         </section>
         <section id="planos">
           <header>
@@ -80,28 +96,32 @@
         </section>
       </div>
       <footer>
-        <nav>
+        <nav aria-label="Main Navigation">
           <ul class="navbar">
             <li>
-              <a href="#pagina-inicial" class="navbar-icones">
+              <a
+                href="#pagina-inicial"
+                class="navbar-icones"
+                aria-label="Início"
+              >
                 <span class="material-symbols-outlined"> home </span>
                 <span>Início</span>
               </a>
             </li>
             <li>
-              <a href="#livros" class="navbar-icones">
+              <a href="#livros" class="navbar-icones" aria-label="Livros">
                 <span class="material-symbols-outlined"> menu_book </span>
                 <span>Livros</span>
               </a>
             </li>
             <li>
-              <a href="#planos" class="navbar-icones">
+              <a href="#planos" class="navbar-icones" aria-label="Planos">
                 <span class="material-symbols-outlined"> library_books </span>
                 <span>Planos</span>
               </a>
             </li>
             <li>
-              <a href="#desafios" class="navbar-icones">
+              <a href="#desafios" class="navbar-icones" aria-label="Desafios">
                 <span class="material-symbols-outlined">
                   question_exchange
                 </span>
