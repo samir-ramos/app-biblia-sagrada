@@ -8,63 +8,75 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home,menu_book,library_books,question_exchange"
+      href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home,menu_book,library_books,question_exchange,stylus_note"
     />
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
+      <main class="container">
         <section id="pagina-inicial" class="active">
-          <header>
+          <div class="titulo-principal">
             <h1>Bíblia Sagrada</h1>
-          </header>
-          <main>
+          </div>
+          <div class="conteudo-principal">
             <div id="boas-vindas">
-              <h2>Bem-vindo à Sua Jornada pela Palavra de Deus!📖</h2>
-              <p>
-                Estamos felizes em ter você aqui! Esta aplicação foi
-                cuidadosamente criada para ser uma ferramenta poderosa em sua
-                caminhada espiritual. Aqui, você encontrará:
-              </p>
-              <ul>
-                <li>
-                  <span class="negrito">A Bíblia completa</span> para ler,
-                  refletir e meditar.
-                </li>
-                <li>
-                  <span class="negrito">Recursos de estudo</span> para
-                  aprofundar seu entendimento.
-                </li>
-                <li>
-                  <span class="negrito">Dicas e guias</span> para ajudá-lo a
-                  aplicar a Palavra no dia a dia.
-                </li>
-              </ul>
-
-              <p>
-                Nossa missão é facilitar seu acesso à Palavra de Deus e
-                enriquecer sua vida espiritual. Que este espaço seja uma fonte
-                de inspiração, sabedoria e comunhão com o Senhor.
-              </p>
-              <p id="versiculo-de-abertura">
-                <span class="negrito">
-                  "Lâmpada para os meus pés é a tua palavra, e luz para o meu
-                  caminho."
-                </span>
-                <span class="italico">(Salmos 119:105)</span>
-              </p>
-              <p>
-                Sinta-se à vontade para explorar, estudar e compartilhar. Deus
-                abençoe sua jornada! 🙏
-              </p>
+              <h3>Bem-vindo à Sua Jornada pela Palavra de Deus!📖</h3>
+              <div id="mesagem">
+                <p>
+                  Estamos felizes em ter você aqui! Esta aplicação foi
+                  cuidadosamente criada para ser uma ferramenta poderosa em sua
+                  caminhada espiritual. Aqui, você encontrará:
+                </p>
+                <ul>
+                  <li>
+                    <span class="negrito">A Bíblia completa</span> para ler,
+                    refletir e meditar.
+                  </li>
+                  <li>
+                    <span class="negrito">Recursos de estudo</span> para
+                    aprofundar seu entendimento.
+                  </li>
+                  <li>
+                    <span class="negrito">Dicas e guias</span> para ajudá-lo a
+                    aplicar a Palavra no dia a dia.
+                  </li>
+                </ul>
+                <p>
+                  Nossa missão é facilitar seu acesso à Palavra de Deus e
+                  enriquecer sua vida espiritual. Que este espaço seja uma fonte
+                  de inspiração, sabedoria e comunhão com o Senhor.
+                </p>
+                <p id="versiculo-de-abertura">
+                  <span class="negrito">
+                    "Lâmpada para os meus pés é a tua palavra, e luz para o meu
+                    caminho."
+                  </span>
+                  <span class="italico">(Salmos 119:105)</span>
+                </p>
+                <p>
+                  Sinta-se à vontade para explorar, estudar e compartilhar. Deus
+                  abençoe sua jornada! 🙏
+                </p>
+              </div>
+              <form action="#" method="post" id="formulario-login">
+                <label class="label-login">
+                  Usuário:
+                  <input type="text" name="username" class="input-login" />
+                </label>
+                <label class="label-login">
+                  Senha:
+                  <input type="password" name="password" class="input-login" />
+                </label>
+                <button type="submit" id="btn-login">entrar</button>
+              </form>
             </div>
-          </main>
+          </div>
         </section>
         <section id="livros">
-          <header>
-            <h1>Livros</h1>
-          </header>
-          <main>
+          <div class="titulo-principal">
+            <h2>Livros</h2>
+          </div>
+          <div class="conteudo-principal">
             <ul id="lista-livros">
               <li>
                 <button class="livro" data-livro="Genesis">Gênesis</button>
@@ -80,21 +92,27 @@
               </li>
               <!-- Adicione mais livros conforme necessário -->
             </ul>
-          </main>
+          </div>
         </section>
         <section id="planos">
-          <header>
-            <h1>Planos de Estudo</h1>
-          </header>
-          <main></main>
+          <div class="titulo-principal">
+            <h2>Planos de Estudo</h2>
+          </div>
+          <div class="conteudo-principal"></div>
         </section>
         <section id="desafios">
-          <header>
-            <h1>Desafios</h1>
-          </header>
-          <main></main>
+          <div class="titulo-principal">
+            <h2>Desafios</h2>
+          </div>
+          <div class="conteudo-principal"></div>
         </section>
-      </div>
+        <section id="estudo">
+          <div class="titulo-principal">
+            <h2>Estudos</h2>
+          </div>
+          <div class="conteudo-principal"></div>
+        </section>
+      </main>
       <footer>
         <nav aria-label="Main Navigation">
           <ul class="navbar">
@@ -126,6 +144,12 @@
                   question_exchange
                 </span>
                 <span>Desafios</span>
+              </a>
+            </li>
+            <li>
+              <a href="#estudo" class="navbar-icones" aria-label="Estudo">
+                <span class="material-symbols-outlined"> stylus_note </span>
+                <span>Estudo</span>
               </a>
             </li>
           </ul>
